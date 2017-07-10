@@ -1,0 +1,53 @@
+* {
+    font-family: victor,'Roboto', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@font-face {
+    font-family: victor;
+    src: url(https://fonts.googleapis.com/css?family=Oswald);
+    font-weight:400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    --main-text-color: #F7F7F7;
+    --secondary-text-color: #A4A4A4;
+    font-family: victor, 'Roboto',Helvetica,Arial,sans-serif;
+}
+
+.navbar{
+  background-color: rgba(255,255,255,0.6);
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navbar > .navbar-list{
+  list-style-type: none;
+  margin: 0;
+  float:right;
+}
+
+.navbar > .navbar-list > .nav-item {
+  display: inline-block;
+  padding: 20px;
+}
+
+.navbar > .navbar-list > .nav-item > a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  color:rgb(45, 23, 77);
+}
+
+.clearfix:after{
+  clear: both;
+  content: " ";
+  display: block;
+  visibility: hidden;
+}
