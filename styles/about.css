@@ -1,0 +1,16 @@
+div.col > img{
+  width: 330px;
+  margin-left: 20%;
+}
+
+div.about-box{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+ul.bullets{
+  list-style: none;
+}
+
+ul.bullets > li:first-child{
+  font-weight: bold;
+}

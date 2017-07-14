@@ -1,0 +1,30 @@
+
+main.main{
+  background-color: black;
+}
+
+section.time-container{
+  background-color:
+}
+
+section.time-container > div.col{
+
+}
+
+nav.timenav{
+  width:100%;
+}
+
+nav.timenav > ul.timelist {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav.timenav > ul.timelist > li.time {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav.timenav > ul.timelist > li.time > a {
+  text-decoration: none;
+  background-color: rgba(200, 200, 200, 1);
+}

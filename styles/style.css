@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: victor;
-    src: url(https://fonts.googleapis.com/css?family=Oswald);
+    src: url('https://fonts.googleapis.com/css?family=Oswald');
     font-weight:400;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar{
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.3);
   width: 100%;
   position: fixed;
   top: 0;
@@ -45,9 +45,99 @@ body {
   color:rgb(45, 23, 77);
 }
 
+.navbar > .navbar-list > .nav-item > a:hover{
+  color: white;
+}
+
+.navbar > .navbar-list > .nav-item.active > a{
+  color: white;
+}
+
 .clearfix:after{
   clear: both;
   content: " ";
   display: block;
   visibility: hidden;
+}
+
+.back{
+  background-image: url('../img/fondo.jpg');
+  width: 100%;
+  height: 100vh;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
+
+section#black-ground{
+  width: 100%;
+  background-color: rgba(10,10,10,0.95);
+  animation-name: darker-back;
+  animation-duration: 2s;
+}
+
+@keyframes darker-back {
+    from {background-color: rgba(10,10,10,0);}
+    to {background-color: rgba(10,10,10,0.95);}
+}
+
+.flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-around{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+
+div.col{
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  padding: 0 40px;
+  /*background-color: rgba(220,220,220,0.2);*/
+}
+
+.titulo{
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtitulo{
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#googleMap {
+    height: 400px;
+}
+
+footer.footer>p.notaAlPie{
+  color: white;
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  left: 2%;
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+
 }

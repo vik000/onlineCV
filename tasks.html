@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>CV Victor Garcia</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/about.css">
+	<link rel="stylesheet" href="styles/timeline.css">
+  <script src="./js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+  <main class="main">
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="aboutme.html">About me</a></li>
+        <li class="nav-item active"><a href="experience.html">My timeline</a></li>
+        <li class="nav-item"><a href="contact.html">Contact me</a></li>
+      </ul>
+    </nav>
+  <!---contenido de la página-->
+
+	<div class="container">
+		<section class="row section-container">
+
+			<h2>Tasks</h2>
+
+			<div class="col-6">
+				<h3>Add new task</h3>
+				<form>
+					<input type="text" id="newTaskName" name="name" placeholder="New task" required>
+					<br>
+					<br>
+					<button id="sendNewTask">Add</button>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<h3>Pending tasks</h3>
+				<div class="loader"></div>
+				<div>
+					<ul id="taskContainer">
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+  <footer class="footer">
+  	<p class="notaAlPie">
+  		@Victor García - 2017.
+  	</p>
+  </footer>
+</body>
+<script src="js/ajax.js"></script>
+</html>
