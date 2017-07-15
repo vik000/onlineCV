@@ -1,10 +1,15 @@
+section.about-wall{
+  background-image: url('../img/fondo5.jpg');
+}
+
 div.col > img{
   width: 330px;
-  margin-left: 20%;
+  margin-left: 20%
+  border: 10px solid #fff;
 }
 
 div.about-box{
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 ul.bullets{
@@ -13,4 +18,8 @@ ul.bullets{
 
 ul.bullets > li:first-child{
   font-weight: bold;
+}
+
+section > div.col > h2,article{
+  color:black !important;
 }

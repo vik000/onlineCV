@@ -61,11 +61,15 @@ body {
 }
 
 .back{
-  background-image: url('../img/fondo.jpg');
   width: 100%;
   height: 100vh;
   background-repeat:no-repeat;
   background-position:center center;
+  background-size: 100vw 100vh;
+}
+
+section.index-wall{
+  background-image: url('../img/fondo.jpg');
 }
 
 section#black-ground{
@@ -136,6 +140,12 @@ footer.footer>p.notaAlPie{
   left: 2%;
 }
 
+.shadow {
+  -moz-box-shadow: 0px 0px 20px #000000;
+  -webkit-box-shadow: 0px 0px 20px #000000;
+  -ms-box-shadow: 0px 0px 20px #000000;
+  box-shadow: 0px 0px 20px #000000;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
