@@ -8,8 +8,8 @@ for (var i=0; i<navItems.length; i++){
     if (sectionToGo.length ===2){
       event.preventDefault();
       var goTo=sectionToGo[sectionToGo.length-1];
-      console.log(goTo);
-      getelementByIdAndScroll();
+      //console.log(goTo);
+      getelementByIdAndScroll(goTo);
     }
   });
 }
@@ -17,20 +17,17 @@ for (var i=0; i<navItems.length; i++){
 
 function getelementByIdAndScroll(id){
   var element;
-  if(id===''){
-    element=document.getElementsByClassName('selection')[0];
-  }else {
-    element=document.getElementById(id);
-  }
+
+  element=document.getElementById(id);
+
   scrollToElement(element);
 }
 
-function scrollToElement(){
+function scrollToElement(element){
   //console.log(element.getBoundingClientRect());
   var jump=element.getBoundingClientRect().top;
   console.log(jump);
 }
-
 
 
 } //final de window.onload
