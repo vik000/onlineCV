@@ -46,11 +46,11 @@ section.selection > div.element > nav.timenav > ul.timelist >li a:hover{
 }
 
 section.education{
-  background-image: url('../img/education2.jpeg');
+  background-image: url('../img/education.jpeg');
 }
 
 section.experience{
-  background-image: url('../img/experience2.jpeg');
+  background-image: url('../img/experience.jpeg');
 }
 
 div.flex > a{
