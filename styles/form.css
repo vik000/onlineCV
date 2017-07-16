@@ -4,10 +4,19 @@ section.contact-wall{
 
 .form {
     padding: 0 20px;
+    /*background-color: rgba(255, 251, 240,0.2);*/
 }
 
 .form .form-row {
     padding: 10px;
+}
+
+.form-row>h3{
+  color: rgb(18, 15, 45);
+}
+
+.form-row>label{
+    color: rgb(98, 164, 173);
 }
 
 .form input{

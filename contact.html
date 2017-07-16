@@ -216,6 +216,31 @@
 		});
 	</script>
 <!--other-->
+<!--tooltip de ayuda-->
+<script type="text/javascript">
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+</script>
+<!--tooltip de ayuda-->
 </head>
 <body>
 <main class="main">
@@ -250,13 +275,13 @@
 			<div class="form-row">
 				<div class="select">
 					<h3>How did you find me?</h3>
-					<input type="radio" class="radio1" id="online" name="how" value="online search">
+					<input type="radio" class="radio1 masterTooltip" title="click to select" id="online" name="how" value="online search">
 					<label for="online">Online search</label>
 
-					<input type="radio" class="radio1" id="linkedin" name="how" value="linkedin">
+					<input type="radio" class="radio1 masterTooltip" title="click to select" id="linkedin" name="how" value="linkedin">
 					<label for="linkedin">Linkedin</label>
 
-					<label for="someone"><input id="someone2" type="text" name="how" value="Through Someone"></label>
+					<label for="someone"><input id="someone2" type="text" title="click to edit and be able to tell me who told you about me!" class="masterTooltip" name="how" value="Through Someone"></label>
 				</div>
 			</div>
 			<div class="form-row">
