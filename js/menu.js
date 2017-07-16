@@ -25,8 +25,22 @@ function getelementByIdAndScroll(id){
 
 function scrollToElement(element){
   //console.log(element.getBoundingClientRect());
-  var jump=element.getBoundingClientRect().top;
+  var jump=element.getBoundingClientRect().top*0.2;
   console.log(jump);
+
+  window.scroll(0,jump);
+  //document.documentElement.scrollTop = jump;
+  //document.body.scrollTop+=jump;
+
+  if(!element.lastJump || element.lastJump > jump){
+    element.lastJump=Math.abs(jump);
+
+    setTimeout(function(){
+      scrollToElement(element);
+    },30);
+  }else {
+    element.lastJump=null;
+  }
 }
 
 
