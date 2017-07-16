@@ -51,6 +51,12 @@ div.select label{
   border: none;
 }
 
+input#someone2{
+  color: green;
+  margin: 0;
+  display: inline;
+}
+
 textarea{
   width: 100%;
 }
