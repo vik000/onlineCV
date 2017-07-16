@@ -33,7 +33,6 @@ input:checked + label{
 }
 
 div.select label{
-  padding: 0 20px;
   cursor: pointer;
 }
 
@@ -60,6 +59,10 @@ textarea{
   display:none;
 }
 
+p{
+  display: inline;
+  margin: 0;
+}
 
 button#enviar{
     margin-left: 10px;

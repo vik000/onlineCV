@@ -194,14 +194,7 @@
 <!--other-->
 	<script type="text/javascript">
 		$(function() {
-			var someone;
-			console.log( "ready!" );
-			$('#someone').change(function(){
-				var someone=$('#someone').val();
-  		$( '#plabel' ).toggleClass( "invisible" );
-				alert(someone);
-			});
-			//$('input#someone + label')
+
 
 		});
 	</script>
@@ -240,14 +233,14 @@
 			<div class="form-row">
 				<div class="select">
 					<h3>How did you find me?</h3>
-					<input type="radio" id="online" name="how" value="online search">
+					<input type="radio" class="radio1" id="online" name="how" value="online search">
 					<label for="online">Online search</label>
 
-					<input type="radio" id="linkedin" name="how" value="linkedin">
+					<input type="radio" class="radio1" id="linkedin" name="how" value="linkedin">
 					<label for="linkedin">Linkedin</label>
 
 					<input type="radio" id="someone" name="how" value="through someone: ">
-					<label for="someone"><p id="plabel">Through Someone</p><input id="someone2" type="hidden"></label>
+					<label for="someone"><p id="plabel">Through Someone</p><input id="someone2" type="text" name="other" value="Hello"></label>
 				</div>
 			</div>
 			<div class="form-row">
