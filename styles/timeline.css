@@ -52,3 +52,7 @@ section.education{
 section.experience{
   background-image: url('../img/experience2.jpeg');
 }
+
+div.flex > a{
+  margin-top: 100px;
+}
