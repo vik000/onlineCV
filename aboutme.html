@@ -5,6 +5,8 @@
 	<title>CV Victor Garcia</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/about.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
@@ -19,16 +21,63 @@
   </nav>
 <!---contenido de la página-->
 <section class="back about-wall">
-	<div class=" shadow">
+	<div class="about-box shadow">
 		<div class="wrap">
 			<article class="shadow">
-
+				<h2 class="section-title">
+					Who I am
+				</h2>
+					<p>
+						 Innovation Consultant with experience in Gamification.
+						 Versatile, with immense flexibility and adaptation. An e-book worm and an information devourer.
+						 The best guess is an educated guess, but done is better than perfect.
+					</p>
+					 <ul class="bullets">
+						<li class="bullet-li"> My experience:</li>
+						<li class="bullet-li">- Digital Marketing and Gamification.</li>
+						<li class="bullet-li">- Professional Training and lecturing.</li></li>
+						<li class="bullet-li"> - Entrepreneurship.</li>
+						<li class="bullet-li">- Consultancy in Lighting Design, Retail Design and Public Tenders.</li>
+						<li class="bullet-li">- Solar Decathlon 2009.</li>
+						<li class="bullet-li">- UX Design.</li>
+					</ul>
+					<ul class="bullets">
+						<li class="bullet-li">My interests:</li>
+						<li class="bullet-li">- Data Analysis for stock trading.</li>
+						<li class="bullet-li">- Learning Languages.</li>
+					</ul>
+					<p> If you think we can do business or help each other, get in <a href="./contact.html" title="go to contact section" class="masterTooltip">contact</a> with me now.</p>
 			</article>
 			<img src="./img/me.jpg" alt="photo of me" class="shadow">
-
+		</div><!--end div wrap-->
+	</div><!--end div about-box-->
+	<div class="down">
+		<h2 class="section-title">Scroll down to add some tasks interactively</h2>
+	</div>
+</section><!--end sextion-->
+<section class="back about-wall">
+	<div class="about-box">
+		<div class="wrap pullup">
+			<article class="shadow">
+			<h2 class="section-title">Add new task</h2>
+			<form class="formbox">
+				<input type="text" id="newTaskName" name="name" placeholder="New task" required>
+				<br>
+				<br>
+				<button id="sendNewTask">Add</button>
+			</form>
+			</article>
+			<article class="shadow">
+					<h2 class="section-title col-6">Pending tasks</h2>
+					<div class="loader"></div>
+					<div>
+						<ul id="taskContainer">
+						</ul>
+					</div>
+			</article>
 		</div>
-	</div><!--end div col-->
-</section><!--end sextion back flex-->
+	</div>
+</section>
 <!---end tags-->
 <footer class="footer">
 	<p class="notaAlPie">
@@ -37,4 +86,5 @@
 </footer>
 </main>
 </body>
+<script src="js/ajax.js"></script>
 </html>

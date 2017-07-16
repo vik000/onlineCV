@@ -142,6 +142,12 @@ div.col{
   margin-bottom: 60px;
 }
 
+.down{
+  position: absolute;
+  bottom: 20%;
+  margin: 0 30%;
+}
+
 #googleMap {
     height: 400px;
 }
@@ -155,10 +161,10 @@ footer.footer>p.notaAlPie{
 }
 
 .shadow {
-  -moz-box-shadow: 0px 0px 20px #000000;
-  -webkit-box-shadow: 0px 0px 20px #000000;
-  -ms-box-shadow: 0px 0px 20px #000000;
-  box-shadow: 0px 0px 20px #000000;
+  -moz-box-shadow: 5px 5px 5px 3px rgba(10,10,10,0.5);
+  -webkit-box-shadow: 5px 5px 5px 3px rgba(10,10,10,0.5);
+  -ms-box-shadow: 5px 5px 5px 3px rgba(10,10,10,0.5);
+  box-shadow: 5px 5px 5px 3px rgba(10,10,10,0.5);
 }
 
 .tooltip {

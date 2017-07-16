@@ -121,3 +121,7 @@ button#enviar:hover{
   background-color: white;
   color: rgb(34, 19, 94);
 }
+
+li.task-item{
+  list-style-type: none;
+}

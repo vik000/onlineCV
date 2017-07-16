@@ -56,3 +56,9 @@ section.experience{
 div.flex > a{
   margin-top: 100px;
 }
+
+div.col img{
+  width: 40px;
+  height: auto;
+  margin-top: 0px;
+}

@@ -3,23 +3,31 @@ section.about-wall{
 }
 
 div.about-box{
-  background-color: rgba(255, 255, 255, 0.6);
-  width: 40%;
-  float: left;
-  position: absolute;
   color: black;
 }
 
+.wrap{
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top:10vh;
+}
+
+
 img{
-  position: absolute;
+  float: left;
   width: 330px;
-  border: 10px solid #fff;
+  height: 434px;
+  border-radius:0;
 }
 
 article{
-  width: 40%;
-  position: absolute;
-  
+  min-width: 500px;
+  max-width: 60%;
+  float: left;
+  height: 434px;
+  background-color: #fff;
+  padding: 0 20px;
 }
 
 ul.bullets{
@@ -32,4 +40,66 @@ ul.bullets > li:first-child{
 
 section > div.col > h2,article{
   color:black !important;
+}
+
+.pullup{
+  margin-top: -200px;
+}
+
+.formbox{
+  padding-top: 20px;
+}
+
+button#sendNewTask{
+  background-color: rgb(34, 19, 94);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color linear 0.5s;
+}
+
+button#sendNewTask:hover{
+  background-color: white;
+  color: rgb(34, 19, 94);
+}
+
+button.deleteTask{
+  background-color: #fff;
+  border: none;
+  color: rgb(80,80,80);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  transition: color linear 0.5s;
+  padding: 0 40px;
+}
+button.deleteTask:hover{
+  color: rgb(255, 36, 29);
+}
+
+ul#taskContainer{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  list-style-type: none;
+  margin: 0;
+}
+
+
+input#newTaskName{
+  display: block;
+  border: none;
+  border-bottom: 2px solid black;
+  background:transparent;
+  margin: 4px 0 15px 0;
+  width: 100%;
 }
