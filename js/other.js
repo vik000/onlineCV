@@ -1,1 +1,4 @@
-document.selectElementById('someone').onchange
+function good(){
+    $("a").css("color", "red");
+    alert('hello');
+};

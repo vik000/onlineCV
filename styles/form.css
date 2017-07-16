@@ -24,8 +24,20 @@ section.contact-wall{
 
 .form input[type=radio]{
   display: inline;
+  background-image: url('../img/radio.png');
 }
 
+input:checked + label{
+  font-weight: bold;
+  color: rgb(255, 234, 226);
+}
+
+div.select label{
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+/*
 .form input[type=radio]{
   position: absolute;
   opacity: 0;
@@ -33,9 +45,19 @@ section.contact-wall{
   -webkit-opacity: 0;
   -o-opacity: 0;
 }
+*/
+
+#someone2{
+  max-width: 200px;
+  border: none;
+}
 
 textarea{
   width: 100%;
+}
+
+.invisible{
+  display:none;
 }
 
 
