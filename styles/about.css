@@ -2,17 +2,24 @@ section.about-wall{
   background-image: url('../img/fondo5.jpg');
 }
 
-div.col > img{
+div.about-box{
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 40%;
+  float: left;
+  position: absolute;
+  color: black;
+}
+
+img{
   position: absolute;
   width: 330px;
-  float: left;
   border: 10px solid #fff;
 }
 
-div.about-box{
-  background-color: rgba(255, 255, 255, 0.6);
-  float: left;
+article{
+  width: 40%;
   position: absolute;
+  
 }
 
 ul.bullets{
