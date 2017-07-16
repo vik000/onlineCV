@@ -34,7 +34,31 @@
   });
 });
 </script>
-
+<!--tooltip de ayuda-->
+<script type="text/javascript">
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+</script>
+<!--tooltip de ayuda-->
 </head>
 <body>
 <main class="main">
@@ -49,7 +73,7 @@
 <!---contenido de la página-->
 <section class="education back" id="education">
 	<div class="col flex tnav">
-		<a href="#selection">VOLVER</a>
+		<a href="#selection">Back to the menu</a>
 	</div>
 </section>
 
@@ -57,8 +81,8 @@
 	<div class="element">
 		<nav class="timenav">
 			<ul class="timelist">
-				<li class="tnav education"><a href="#education">Education</a></li>
-				<li class=" tnav experience"><a href="#experience">Experience</a></li>
+				<li class="masterTooltip tnav education" title="Access my education section"><a href="#education">Education</a></li>
+				<li class="masterTooltip tnav experience" title="Access my job experience section"><a href="#experience">Experience</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -66,7 +90,7 @@
 
 <section class="experience back" id="experience">
 	<div class="col flex tnav">
-		<a href="#selection">VOLVER</a>
+		<a href="#selection">Back to the menu</a>
 	</div>
 </section><!--end section 1:selection-->
 <!---end tags-->

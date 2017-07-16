@@ -3,13 +3,16 @@ section.about-wall{
 }
 
 div.col > img{
+  position: absolute;
   width: 330px;
-  margin-left: 20%
+  float: left;
   border: 10px solid #fff;
 }
 
 div.about-box{
   background-color: rgba(255, 255, 255, 0.6);
+  float: left;
+  position: absolute;
 }
 
 ul.bullets{

@@ -107,6 +107,19 @@ section#black-ground{
   width: 100vw;
 }
 
+.fex-left{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items:center;
+  margin-left: 0;
+  width: 100vw;
+}
+
 div.col{
   color: white;
   width: 40%;
