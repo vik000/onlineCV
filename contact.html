@@ -241,6 +241,7 @@ $('.masterTooltip').hover(function(){
 });
 </script>
 <!--tooltip de ayuda-->
+
 </head>
 <body>
 <main class="main">
@@ -258,19 +259,19 @@ $('.masterTooltip').hover(function(){
       <div id="googleMap"></div>
   </div>
   <div class="col form">
-    <form name="contacto" method="get">
+    <form name="contacto" method="get" novalidate>
 			<div class="form-row">
 				<h3>Your details:</h3>
 				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" value="Name..." required>
+				<input type="text" id="name" name="name" placeholder="Name..." required>
 				<label for="surname">Surname:</label>
-				<input type="text" id="surname" name="surname" value="Surname..." required>
+				<input type="text" id="surname" name="surname" placeholder="Surname..." required>
 			</div>
 			<div class="form-row">
 				<label for="email">email:</label>
-				<input type="email" id="email" name="email" value="email@dominion.com" required>
+				<input type="email" id="email" name="email" placeholder="email@dominion.com" required>
 				<label for="number">Contact Number:</label>
-				<input type="number" name="phone" pattern="/^[9|6|7][0-9]{8}$/" value="613555666">
+				<input type="number" id="number" name="phone" pattern="/^[9|6|7][0-9]{8}$/" placeholder="613555666">
 			</div>
 			<div class="form-row">
 				<div class="select">
@@ -286,7 +287,7 @@ $('.masterTooltip').hover(function(){
 			</div>
 			<div class="form-row">
 				<h3>Tell me something:</h3>
-				<textarea cols="40" rows="5" name="textbox">
+				<textarea  id="texto" cols="40" rows="5" name="textbox">
 				</textarea>
 			</div>
 
@@ -304,4 +305,5 @@ $('.masterTooltip').hover(function(){
 </footer>
 </main>
 </body>
+<script type="text/javascript" src="./js/form.js"></script>
 </html>
