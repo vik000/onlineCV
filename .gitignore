@@ -1,0 +1,4 @@
+/node_modules
+
+#quito la db de la repo:
+db/
