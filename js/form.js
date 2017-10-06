@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   //prevent envio:
   form.addEventListener("submit",function(event){
-    if (inputTextField.value.split(" ").length > 149){
+    if (inputTextField.value.split(" ").length > 150){
       alert("Tell me something is a field that must not exceed 150 words.");
       inputTextField.focus();
       event.preventDefault();
