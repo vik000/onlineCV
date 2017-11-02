@@ -18,12 +18,14 @@ $(document).ready(function(){
   //   radio3: document.getElementById("someone2")
   // }
 
-  var inputTextField = document.getElementById("texto");
 
 
   //prevent envio:
   form.addEventListener("submit",function(event){
-    if (inputTextField.value.split(" ").length > 150){
+    var inputTextField = document.getElementById("texto");
+    var box=inputTextField.value.split(" ");
+    var box=box.filter(function(a){return a !== ''});
+    if (box.length > 150){
       alert("Tell me something is a field that must not exceed 150 words.");
       inputTextField.focus();
       event.preventDefault();
