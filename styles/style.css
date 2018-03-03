@@ -1,3 +1,4 @@
+/* mobile */
 * {
     font-family: victor,'Roboto', sans-serif;
     box-sizing: border-box;
@@ -12,120 +13,85 @@
 }
 
 body {
-    margin: 0;
+    color: white;
+    z-index: 2;
+    margin: 0 auto;
     padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    display: block;
+    position: absolute;
     --main-text-color: #F7F7F7;
     --secondary-text-color: #A4A4A4;
     font-family: victor, 'Roboto',Helvetica,Arial,sans-serif;
 }
 
-.navbar{
-  background-color: rgba(255,255,255,0.3);
-  width: 100%;
-  position: fixed;
-  top: 0;
+ul,li{
+  list-style: none;
 }
 
-.navbar > .navbar-list{
-  list-style-type: none;
-  margin: 0;
-  float:right;
-  font-size: 0;
-}
-
-.navbar > .navbar-list > .nav-item {
+section.section-one{
+  position: absolute;
+  width: 100vw;
   display: inline-block;
-  padding: 20px;
+  text-align: center;
 }
 
-.navbar > .navbar-list > .nav-item > a {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  color:rgb(45, 23, 77);
-}
-
-.navbar > .navbar-list > .nav-item > a:hover{
-  color: white;
-}
-
-.navbar > .navbar-list > .nav-item.active > a{
-  color: white;
-}
-
-.clearfix:after{
-  clear: both;
-  content: " ";
+div.div-one{
+  position: relative;
   display: block;
-  visibility: hidden;
+  margin-top: 30%;
+  float: left;
 }
 
-.back{
+div.div-two{
+  position: relative;
+  padding: 20px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+ul.stacks > li.stack_knowledge{
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 30%;
+}
+
+img.back{
+  position: absolute;
+  left: 50%;
+  margin-left: -900px;
+  top: 0;
+  z-index: -4;
+  width: 1800px;
+  overflow-x: hidden
+  height: 1100px;
+}
+
+p.detail{
+}
+
+section.img-container{
+  height: 1125px;
+  width: 2000px;
+  overflow-y: hidden;
+}
+
+div#black-ground{
+  position: relative;
+  height: 100%;
   width: 100%;
-  height: 100vh;
-  background-repeat:no-repeat;
-  background-position:center center;
-  background-size: 100vw 100vh;
-}
-
-section.index-wall{
-  background-image: url('../img/fondo.jpg');
-}
-
-section#black-ground{
-  width: 100%;
-  background-color: rgba(10,10,10,0.95);
+  background-color: rgba(10,10,10,0.6);
   animation-name: darker-back;
   animation-duration: 2s;
+  z-index: -1;
 }
 
 @keyframes darker-back {
     from {background-color: rgba(10,10,10,0);}
-    to {background-color: rgba(10,10,10,0.95);}
-}
-
-.flex{
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-around{
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 100vw;
-}
-
-.fex-left{
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items:center;
-  margin-left: 0;
-  width: 100vw;
-}
-
-div.col{
-  color: white;
-  width: 40%;
-  margin: 0 auto;
-  padding: 0 40px;
-  /*background-color: rgba(220,220,220,0.2);*/
+    to {background-color: rgba(10,10,10,0.6);}
 }
 
 .titulo{
@@ -178,7 +144,49 @@ footer.footer>p.notaAlPie{
 	font-size:12px Arial;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-     /* IE10+ CSS styles go here */
+/* tablet */
+@media only screen and (max-width: 414px) {
+    body {
+        background-color: lightblue;
+    }
+}
 
+/* desktop */
+@media only screen and (max-width: 1024px) {
+
+  .navbar{
+    background-color: rgba(255,255,255,0.3);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  }
+
+  .navbar > .navbar-list{
+    list-style-type: none;
+    margin: 0;
+    float:right;
+    font-size: 0;
+  }
+
+  .navbar > .navbar-list > .nav-item {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .navbar > .navbar-list > .nav-item > a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(45, 23, 77);
+  }
+
+  .navbar > .navbar-list > .nav-item > a:hover{
+    color: white;
+  }
+
+  .navbar > .navbar-list > .nav-item.active > a{
+    color: white;
+  }
 }
