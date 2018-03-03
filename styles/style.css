@@ -5,6 +5,10 @@
     -moz-box-sizing: border-box;
 }
 
+ul,li{
+  list-style: none;
+}
+
 @font-face {
     font-family: victor;
     src: url('https://fonts.googleapis.com/css?family=Oswald');
@@ -74,6 +78,7 @@ section.index-wall{
 }
 
 section#black-ground{
+  color: white;
   width: 100%;
   background-color: rgba(10,10,10,0.95);
   animation-name: darker-back;
